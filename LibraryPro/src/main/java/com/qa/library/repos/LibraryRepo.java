@@ -1,5 +1,5 @@
 package com.qa.library.repos;
 
-public class LibraryRepo {
+public interface LibraryRepo {
 
 }
