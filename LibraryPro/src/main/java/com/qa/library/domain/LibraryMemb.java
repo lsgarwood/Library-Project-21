@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Library {
+public class LibraryMemb {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,14 +15,14 @@ public class Library {
 	private String address;
 	private String email;
 
-	public Library(String name, String address, String email) {
+	public LibraryMemb(String name, String address, String email) {
 		super();
 		this.name = name;
 		this.address = address;
 		this.email = email;
 	}
 
-	public Library(Integer id, String name, String address, String email) {
+	public LibraryMemb(Integer id, String name, String address, String email) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -30,7 +30,7 @@ public class Library {
 		this.email = email;
 	}
 
-	public Library() {
+	public LibraryMemb() {
 		super();
 	}
 
@@ -68,7 +68,7 @@ public class Library {
 
 	@Override
 	public String toString() {
-		return "Library [id=" + id + ", name=" + name + ", address=" + address + ", email=" + email + "]";
+		return "LibraryMemb [id=" + id + ", name=" + name + ", address=" + address + ", email=" + email + "]";
 	}
 
 }
