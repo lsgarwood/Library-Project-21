@@ -47,7 +47,12 @@ Jira link https://misscode.atlassian.net/jira/projects?page=1&selectedCategory=a
 
 <img width="633" alt="AFTER-REMOVEID2" src="https://user-images.githubusercontent.com/91255753/141116231-3a155362-fca4-401b-b078-a9bd79d98724.png">
 
+-Screenshot of your H2 database to prove that data is being persisted. 
 
--Screenshots of your database to prove that data is being persisted. 
+1.H2 Console showing two added Library Members
+
+<img width="838" alt="LibraryMembersH2Console" src="https://user-images.githubusercontent.com/91255753/141124833-07c8f4b9-ce31-4fab-86a0-9c6867e015cb.png">
+
+-Screenshots of your MySQL database to prove that data is being persisted. 
 
 -Screenshot of your test results, including coverage report.
