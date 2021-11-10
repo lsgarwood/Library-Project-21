@@ -51,8 +51,36 @@ Jira link https://misscode.atlassian.net/jira/projects?page=1&selectedCategory=a
 
 1.H2 Console showing two added Library Members
 
+1.GETALL-POSTMAN
+
+<img width="626" alt="GetAllH2" src="https://user-images.githubusercontent.com/91255753/141173808-cb1c8f45-c4a7-4fd3-b2e4-f4835b706198.png">
+
+2.GETALL-H2CONSOLE
+
 <img width="838" alt="LibraryMembersH2Console" src="https://user-images.githubusercontent.com/91255753/141124833-07c8f4b9-ce31-4fab-86a0-9c6867e015cb.png">
 
 -Screenshots of your MySQL database to prove that data is being persisted. 
 
+1.GETALL-POSTMAN
+
+<img width="648" alt="GETALLPOSTMAN" src="https://user-images.githubusercontent.com/91255753/141175122-04a4e967-a7c2-4641-8a20-a40932acc461.png">
+
+2.MYSQL-GETALL1
+
+![image](https://user-images.githubusercontent.com/91255753/141175702-e224b7a7-8986-4d8a-89d7-4e0aed1ba8e2.png)
+
+3.REMOVE-POSTMAN
+
+![image](https://user-images.githubusercontent.com/91255753/141175809-e7ab50cf-96f3-4fd9-9897-1d8a4d59c540.png)
+
+4.GETALL2-POSTMAN
+
+![image](https://user-images.githubusercontent.com/91255753/141175957-2aef2516-6519-4ddf-b77e-3a937f253d4e.png)
+
+5.MYSQL-GETALL2
+
+![image](https://user-images.githubusercontent.com/91255753/141176060-8aba4656-2d0b-44d5-8858-f50b96a32e16.png)
+
 -Screenshot of your test results, including coverage report.
+
+
