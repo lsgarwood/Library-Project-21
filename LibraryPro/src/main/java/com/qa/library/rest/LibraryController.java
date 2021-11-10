@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.qa.library.domain.LibraryMemb;
 import com.qa.library.service.LibraryService;
 
-@RestController
 @RequestMapping("/library")
+@RestController
 public class LibraryController {
 
 	private LibraryService service;
