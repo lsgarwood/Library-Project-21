@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.qa.library.domain.LibraryMemb;
 
 @Repository
-public interface LibraryRepo extends JpaRepository<LibraryMemb, Integer> {
+public interface LibraryMembRepo extends JpaRepository<LibraryMemb, Integer> {
 
 }

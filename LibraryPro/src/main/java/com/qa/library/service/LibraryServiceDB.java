@@ -8,15 +8,15 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.qa.library.domain.LibraryMemb;
-import com.qa.library.repos.LibraryRepo;
+import com.qa.library.repos.LibraryMembRepo;
 
 @Primary
 @Service
 public class LibraryServiceDB implements LibraryService {
 
-	private LibraryRepo repo;
+	private LibraryMembRepo repo;
 
-	public LibraryServiceDB(LibraryRepo repo) {
+	public LibraryServiceDB(LibraryMembRepo repo) {
 		super();
 		this.repo = repo;
 	}
