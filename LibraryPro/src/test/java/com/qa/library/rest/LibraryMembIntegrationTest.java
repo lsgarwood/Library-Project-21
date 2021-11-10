@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
@@ -22,10 +21,12 @@ import org.springframework.test.web.servlet.ResultMatcher;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qa.library.domain.LibraryMemb;
 
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@SpringBootTest
+@AutoConfigureMockMvc
 @Sql(scripts = { "classpath:librarymemb-schema.sql",
 		"classpath:librarymemb-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
-@AutoConfigureMockMvc
+
+//@ActiveProfiles("test")
 public class LibraryMembIntegrationTest {
 
 	@Autowired
