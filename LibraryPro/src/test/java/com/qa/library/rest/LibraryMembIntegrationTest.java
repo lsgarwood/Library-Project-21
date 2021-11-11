@@ -15,7 +15,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 import org.springframework.test.web.servlet.MockMvc;
@@ -30,7 +29,7 @@ import com.qa.library.domain.LibraryMemb;
 @Sql(scripts = { "classpath:librarymemb-schema.sql",
 		"classpath:librarymemb-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 
-@ActiveProfiles("test")
+//@ActiveProfiles("test")
 public class LibraryMembIntegrationTest {
 
 	@Autowired
@@ -38,9 +37,6 @@ public class LibraryMembIntegrationTest {
 
 	@Autowired
 	private ObjectMapper mapper;
-
-	@Autowired
-	private ObjectMapper jsonifier;
 
 	@Test
 	void testCreateLibraryMemb() throws Exception {
@@ -66,13 +62,14 @@ public class LibraryMembIntegrationTest {
 	void testGetAll() throws Exception {
 
 		RequestBuilder request = get("/library/getAll");
+		System.out.println(request);
+		ResultMatcher checkStatus = status().isOk();
 
-		LibraryMemb member = new LibraryMemb(1, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
+		LibraryMemb member = new LibraryMemb("Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
 				"Jane.Bird@oakmail.com");
-
 		List<LibraryMemb> members = List.of(member);
 		String responseBody = this.mapper.writeValueAsString(members);
-		ResultMatcher checkStatus = status().isOk();
+
 		ResultMatcher checkBody = content().json(responseBody);
 
 		this.mvc.perform(request).andExpect(checkStatus).andExpect(checkBody);
@@ -82,10 +79,10 @@ public class LibraryMembIntegrationTest {
 	@Test
 	void testGetLibraryMembById() throws Exception {
 
-		RequestBuilder request = get("/library/get/1");
-
 		LibraryMemb member = new LibraryMemb(1, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
 				"Jane.Bird@oakmail.com");
+
+		RequestBuilder request = get("/library/get/1");
 
 		String responseBody = this.mapper.writeValueAsString(member);
 		ResultMatcher checkStatus = status().isOk();
@@ -118,9 +115,11 @@ public class LibraryMembIntegrationTest {
 	@Test
 	void testRemoveLibraryMemb() throws Exception {
 
-		RequestBuilder request = delete("/remove/{id}");
+		RequestBuilder request = delete("/library/remove/2");
 
 		ResultMatcher checkStatus = status().isNoContent();
+
+		this.mvc.perform(request).andExpect(checkStatus);
 	}
 
 }
