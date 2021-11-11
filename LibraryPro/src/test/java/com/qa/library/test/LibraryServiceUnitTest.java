@@ -1,13 +1,10 @@
-package com.qa.library.service;
+package com.qa.library.test;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
-
 import com.qa.library.domain.LibraryMemb;
 
-@Component
-public interface LibraryService {
+class LibraryServiceUnitTest {
 
 	LibraryMemb createLibraryMemb(LibraryMemb newLibraryMemb);
 
