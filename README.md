@@ -95,7 +95,7 @@ Definitely just revising on the lessons learnt. I defnitely would need to go ove
 
 <img width="1260" alt="Integration Test Result Pass" src="https://user-images.githubusercontent.com/91255753/141455692-b9509b07-6dca-4117-8fce-a9c3b7715165.png">
 
--Screenshot of JUnit Test Coverage main/src/java to reasonable percentage.
+-Screenshot of JUnit Test Coverage src/main/java to reasonable percentage.
 
 <img width="1264" alt="JUnit Test Coverage" src="https://user-images.githubusercontent.com/91255753/141456034-64d021e2-39aa-4cdf-a1b9-5454a94338f4.png">
 
