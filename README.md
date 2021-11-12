@@ -5,13 +5,23 @@ Jira link https://misscode.atlassian.net/jira/projects?page=1&selectedCategory=a
 
 -Why are we doing this?
 
+This project was to put into practice many aspects of what we have been taught over the past couple of months, and to see how well we can implement our learning.
+
 -How I expected the challenge to go.
+
+I was very anxious about the project as I have really struggled to understand pretty much all of the Java lessons, and had many unfinished exercises and previous had failed to get my database to connect.
 
 -What went well?
 
+I feel like the initial stages of setting up the repo, deciding on what i would do, and getting the layout of the project done went well, then the challenge of getting the code and testing right, meant watching back all of the lessons and taking some examples from my previous weeks exercises. Which all came togetehr better than planned.
+
 -What didn't go as planned?
 
+Towards the end of the week, I started facing some issues with testing...My integration test caused me quite a bit of a delay and ended up being a really simple fix! Argh! But all worked out in the end. After getting to u nit testing, i realsised that i wasnt really clear on that and agin had to watch some videos back.
+
 -Possible improvements for future revisions of the project.
+
+Definitely just revising on the lessons learnt. I defnitely would need to go over some of the subjects for th estretch goals, custom queries and custom exceptions, I definitely wouldnt have been able to get that far this week. I would love to be able to create child classes and relational databses to interact within my 'library', which again was just too much for me to achieve this week.
 
 -Screenshots showing your postman requests and the output from the API.
 
