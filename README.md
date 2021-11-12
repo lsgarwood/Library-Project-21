@@ -81,6 +81,14 @@ Jira link https://misscode.atlassian.net/jira/projects?page=1&selectedCategory=a
 
 ![image](https://user-images.githubusercontent.com/91255753/141176060-8aba4656-2d0b-44d5-8858-f50b96a32e16.png)
 
--Screenshot of your test results, including coverage report.
+-Screenshot of your Integration test results, including coverage report.
+
+<img width="1260" alt="Integration Test Result Pass" src="https://user-images.githubusercontent.com/91255753/141455692-b9509b07-6dca-4117-8fce-a9c3b7715165.png">
+
+-Screenshot of JUnit Test Coverage main/src/java to reasonable percentage.
+
+<img width="1264" alt="JUnit Test Coverage" src="https://user-images.githubusercontent.com/91255753/141456034-64d021e2-39aa-4cdf-a1b9-5454a94338f4.png">
+
+
 
 
