@@ -8,6 +8,8 @@ import com.qa.library.domain.LibraryMemb;
 
 class LibraryMembUnitTest {
 
+	LibraryMemb membTestWithID = new LibraryMemb(1, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
+			"Jane.Bird@oakmail.com");
 	LibraryMemb membTest = new LibraryMemb(1, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
 			"Jane.Bird@oakmail.com");
 
@@ -58,10 +60,5 @@ class LibraryMembUnitTest {
 		membTest.setEmail("vera.lynn@records.co.uk");
 		assertEquals("vera.lynn@records.co.uk", membTest.getEmail());
 	}
-
-//	@Test
-//	public void toStringTest() {
-//		assertEquals("LibraryMemb [id=" + id + ", name=" + name + ", address=" + address + ", email=" + email + "]");
-//	}
 
 }

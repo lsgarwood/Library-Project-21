@@ -1,6 +1,6 @@
-drop table if exists `librarymemb` CASCADE;
+drop table if exists `library_memb` CASCADE;
 create table 
-    `librarymemb`
+    `library_memb`
 (
     id integer AUTO_INCREMENT, 
     name varchar(255), 

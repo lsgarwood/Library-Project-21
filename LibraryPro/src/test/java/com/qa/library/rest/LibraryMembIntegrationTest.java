@@ -48,7 +48,7 @@ public class LibraryMembIntegrationTest {
 		RequestBuilder request = post("/library/create").contentType(MediaType.APPLICATION_JSON)
 				.content(requestBodyAsJSON);
 
-		LibraryMemb responseBody = new LibraryMemb(1, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
+		LibraryMemb responseBody = new LibraryMemb(3, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
 				"Jane.Bird@oakmail.com");
 		String responseBodyAsJSON = this.mapper.writeValueAsString(responseBody);
 
@@ -65,9 +65,11 @@ public class LibraryMembIntegrationTest {
 		System.out.println(request);
 		ResultMatcher checkStatus = status().isOk();
 
-		LibraryMemb member = new LibraryMemb("Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
+		LibraryMemb member = new LibraryMemb(1, "Jane Bird", "1 Oak Tree Lane, Foreston, Norfolk",
 				"Jane.Bird@oakmail.com");
-		List<LibraryMemb> members = List.of(member);
+		LibraryMemb member2 = new LibraryMemb(2, "Lauren Bird", "2 Oak Tree Lane, Foreston, Norfolk",
+				"Lauren.Bird@oakmail.com");
+		List<LibraryMemb> members = List.of(member, member2);
 		String responseBody = this.mapper.writeValueAsString(members);
 
 		ResultMatcher checkBody = content().json(responseBody);
@@ -115,7 +117,7 @@ public class LibraryMembIntegrationTest {
 	@Test
 	void testRemoveLibraryMemb() throws Exception {
 
-		RequestBuilder request = delete("/library/remove/2");
+		RequestBuilder request = delete("/library/remove/1");
 
 		ResultMatcher checkStatus = status().isNoContent();
 
